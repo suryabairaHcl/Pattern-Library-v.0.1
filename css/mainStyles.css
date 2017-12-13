@@ -1,0 +1,148 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1F292F;
+}
+h1, h2, h3, h4, p, label, li, a{
+	font-family: 'Roboto', sans-serif !important;
+}
+p, label{
+	font-size: 14px;
+	color: #1F292F;
+}
+h2{font-size: 24px !important;}
+h3{font-size: 18px !important;
+font-weight: 500 !important;
+}
+input, button, submit { border:none; } 
+h3{margin-bottom: 20px !important;}
+.headerbar{
+	width: 100%;
+	background-color:#ffffff;
+	border-bottom: 1px solid #e2e2e2;
+	height: 60px;
+	position: fixed;
+	top: 0px;
+}
+.headerbar h2{
+	padding: 20px 0px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 19px !important;
+	color: #00ADE4;
+	text-transform: uppercase;
+}
+.logo{
+	padding: 18px 10px;
+}
+.styleguide-navigation{
+	background-color: #1F292F;
+	width: 250px;
+	overflow-x: hidden;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 60px;
+	left: 0px;
+
+}
+.styleguide-navigation li a{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #e2e2e2;
+	font-size: 14px;
+	font-weight: 300;
+}
+.styleguide-navigation li a:hover{
+	color:#67A7F1;
+}
+.styleguide-navigation li{
+	margin: 20px;
+}
+.container{
+	margin-left: 275px;
+	margin-top: 100px;
+}
+.title{
+	margin:20px;
+}
+.col-md-100{
+	width: 100%;
+	padding: 20px;
+}
+.col-md-50{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+.cards{
+	background-color: #ffffff;
+	width: 80%;
+	border: 1px solid #D9E2E6;
+}
+.vnav-cards{
+	background-color: #ffffff;
+	width: 400px;
+	border: 1px solid #D9E2E6;
+}
+
+pre.prettyprint{
+	border:none !important;
+	background-color: #F1F2F3;
+	overflow: scroll;
+}
+pre code{
+	line-height: 1.2em;
+	
+	}
+.pull-left{
+	float: left;
+}
+
+.copyToClipBoardWrapper button.copyToClipBoard{
+		position: absolute;
+		left:0;
+		top:0;
+		display: block;
+		opacity: 1;
+		width: 100px;
+		height: 40px;
+		background-color: #fefefe;
+		border:0;
+		border-radius:0 0 5px 0;
+	}
+.active-nav{
+	color:#67A7F1 !important;
+}	
+.space-left{
+	margin-left: 10px;
+}
+.greybox{
+	background-color:#F1F2F3;
+	overflow: auto;
+	padding: 50px;
+}
+.darkbg{
+	background-color:#334F6A;
+	overflow: auto;
+	padding: 50px;
+}
+nav#navbar-menu-side {
+    margin-left: 94px;
+    margin-top: -84px;
+}
+.nav-title .title {
+    margin-left: 116px;
+}
+li hr{
+	border: .5px dashed #A7B4BB;
+}
+li.framwork-components ul {
+    font-size: 15px;
+    color: #A7B4BB;
+}

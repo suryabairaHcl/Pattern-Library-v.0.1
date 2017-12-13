@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+    <title>IFC | iPortal</title>
+
+    <!-- main css stylesheet that imports all the styles (see ../sass/style.scss for reference) -->
+    <link href="css/style-sur.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar navbar-fixed-top navbar-top">
+                    <div class="ifc-logo">
+                        <a href="#"><img src="img/iportal-logo.png" alt="" /></a>
+                    </div>
+                    <div>
+                        <a href=""> 
+                            <span class="all-label">ALL</span>
+                            <span class="fa arrow"></span>
+                            <span class="caret"></span>
+                        </a>  
+                    </div>    
+
+                    <div class="navbar-search">
+                        <div class="search-icon">
+                            <i class="nc-icon nc-zoom-2"></i>
+                        </div>
+
+                        <!--<form role="search" class="navbar-form-custom" action="search_results.html">-->
+                                <input class="search" placeholder="" name="top-search" id="top-search">
+                        <!--</form>-->
+                    </div>
+                    
+                    <div class="ifc-view">
+                        <div class="nt-dropdown">
+                            <div class="dropdown">
+
+                                <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                     <span class="title">Operational View</span><span class="fa arrow"></span><span class="caret"></span>
+                                    </button>
+                                
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">Investment Officer</a></li>
+                                    <li><a href="#">Portfolio Manager</a></li>
+                                    <li><a href="#">Manager</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="accnt-view">
+                        <a href="#">
+                            <i class="nc-icon nc-circle-10"></i>
+                        </a>
+                    </div> 
+                    <div class="notification-icons">
+                        <ul class="navbar-top-links">
+                            <li class="" data-panel="tasks-sidebar">
+                                <a class="open-task count-info new-notification" href="#">
+                                    <p>155</p>
+                                    <i class="nc-icon nc-todo-2"></i>
+                                </a>
+                            </li>
+
+                            <li class="" data-panel="notifications-sidebar">
+                                <a class="open-notifications count-info new-notification" href="#">
+                                    <i class="nc-icon nc-bell-53-2"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageWrapper">
+
+                <!-- Page Content -->
+                <div id="pageContent" class="gray-bg dashbard-1">
+                    <div class="primary-content white-bg dashboard-header">
+                        <div clas="container">
+                        <div class="row">
+                        </div>
+                        <!-- end of row -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of #pageContent -->
+                <!-- Sidebars -->
+                <!-- Notifications Sidebar -->
+                <div id="notifications-sidebar" class="fadeInRight animated rightNav ">
+                    <div class="sidebarHeaderWrap">
+                        <div class="sidebar-heading">
+                            <div class="sidebar-top">
+                                <div class="sidebar-title">Notifications </div>
+
+                            </div>
+                            <div class="sidebar-bottom"></div>
+                        </div>
+                    </div>
+
+                    <nav><div class="sidebarWrap">
+                        <div class="sidebar-body">
+                            <div class="sidebar-filters">
+                                <div class="filter-icons">
+                                  <i class="nc-icon nc-funnel-40"></i>
+                                  <div class="filter-tag">8</div>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification notification-urgent">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PRoduct</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>TODAY 9:25</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>Disbursement Booked</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>Agented Parallel loan disbursed on 08-01-2017 for USD $45,000 under the project “XYZ Project (46408)” for the Partner ETI (50427).</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification notification-urgent">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification ">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">EPMS-VM</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>- Option Expiring</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>Warrent (23456) for Trivon AG Waiver Trivax AG (556778) having Option excercises start date as of 03-Aug-2017 expiring on 01-Jul-2017.</p>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-notification">
+                                <div class="notification-headline clearfix">
+                                    <div class="pull-left">
+                                        <p class="nTitle">PDS CONCEPT</p>
+                                    </div>
+                                    <div class="pull-right nDate">
+                                        <p>Jul/01 16:22</p>
+                                    </div>
+                                </div>
+                                <div class="nSubtitle">
+                                    <p>PDS Waiver Expiring (Post-handover)</p>
+                                </div>
+                                <div class="notification-content">
+                                    <p>PDS Waiver workflow 202013 for the new Partner Gainatogaz (520772) will expire 07-Jul-2017.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div></nav>
+                </div>
+                <!-- end of #notifications-sidebar -->
+                <!-- Tasks Sidebar -->
+                <div id="tasks-sidebar" class="fadeInRight animated rightNav ">
+                    <div class="sidebarHeaderWrap">
+                        <div class="sidebar-heading">
+                            <div class="sidebar-top">
+                            </div>
+                            <div class="sidebar-bottom">
+                                <!-- Nav tabs -->
+                                <div class="ifc-tabs">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#my-tasks" aria-controls="home" role="tab" data-toggle="tab">
+                                                <span class="data-text">Approvals </span><span class="data-count">(10)</span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#tasks-other" aria-controls="profile" role="tab" data-toggle="tab">
+                                                <span class="data-text">Activities </span><span class="data-count">(12)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarWrap">
+                        <div class="sidebar-body">
+                            <div class="sidebar-filters">
+                                <div class="create-date">  
+                                    <span>Creation Date</span>
+                                    <i class="nc-icon nc-small-down"></i>
+                                </div>
+                                <div class="slideOne">  
+                                    <input type="checkbox" value="None" id="slideOne" name="check" checked />
+                                    <label for="slideOne"></label>
+                                </div>
+                                    <div class="toggle-text">with me</div>
+                                
+                                <div class="filter-icons">
+                                  <i class="nc-icon nc-funnel-40"></i>
+                                  <div class="filter-tag">8</div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="my-tasks">
+                                    <!-- <div class="task-header">Documents Workflows</div> -->
+                                    <div class="sidebar-notification selected-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <div class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Change</a>
+                                                    <p>Manager Approve</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="pull-right">
+                                           <p class="nDate">Oct 30 2017</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner Name:</span>AB Bank | 465656</p>
+                                            <p><span class="nLabel">Project:</span> GTFP AB Burkina | 43328</p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <div class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Concept</a>
+                                                    <p>Manager Approve</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="pull-right">
+                                                <p class="nDate"><span>Due: </span><span class="notification-overdue">Oct 28 2017</span></p>
+                                                <p class="nDate">Oct 30 2017</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner Name:</span>AB Bank | 465656</p>
+                                            <p><span class="nLabel">Project:</span> AB Bank Rwanda | 28756</p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">Credit Rating</a>
+                                                    <p>PM Approve</p>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                                 <p class="nDate">Oct 28 2017 </p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 465656</p>
+                                            
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="task-header">Supervision Tasks</div> -->
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">LGD Rating</a>
+                                                    <p>PM Approve</p>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                                 <p class="nDate">Sept 20 2017</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>Africa IC | 43242</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">Integrity Due Diligence</a>
+                                                    <p>Transaction Manager Approve</p>
+                                                </p>
+                                            </div>
+                                             <div class="pull-right">
+                                             <p class="nDate">Sep 15 2017</p>                           
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span>ICARE Foundation | 749045</p>
+                                            <p><span class="nLabel">Project:</span>MEDICARE | 742345</p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Investment Review by Meeti…</a>
+                                                    <p>Transaction Manager Approve</p>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                             <p class="nDate">Sep 9 2017</p>                           
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Partner:</span> ICARE Foundation | 749045</p>
+                                            <p><span class="nLabel">Project:</span>MEDICARE | 742345</p><a href="">See More</a>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">LGD Rating Approval</a>
+                                                </p>
+                                            </div>
+                                              <div class="pull-right">
+                                                <p class="nDate">Jul/20 10:00</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>Africa IC | 43242</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="tasks-other">
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PD Rating Approval</a>
+                                                </p>
+                                            </div>
+                                              <div class="pull-right">
+                                                <p class="nDate">Jul/20 15:00</p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Pending with:</span>John Hayes</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-notification ">
+                                        <div class="notification-headline clearfix">
+                                            <div class="pull-left">
+                                                <p class="nTitle">
+                                                    <a href="#" class="lLink" id="" data-lightbox="">PDS Concept Approval</a>
+                                                </p>
+                                            </div>
+                                            <div class="pull-right">
+                                            <p class="nDate">Jul/23 12:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="notification-content">
+                                            <p><span class="nLabel">Workflow Name:</span>PM Approve</p>
+                                            <p><span class="nLabel">Partner:</span>AB Bank | 46565</p>
+                                            <p><span class="nLabel">Project:</span>AB Bank Rwanda | 28756</p>
+                                            <p><span class="nLabel">Pending with:</span>John Hayes</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- end of #tasks-sidebar -->
+                 <!-- help footer -->
+                <div id="help-footer" class="help-footer">
+                    <div class="container">
+                        <div class="row">
+                             <!--<h2 class="pull-left">Help & Support</h2>-->
+                            <button type="button" class="btn btn-info pull-right closeFooter">[X]</button>
+                            <div class="col-lg-12 ">
+                                <div class="col-md-4">
+                                    <ul class="nav help-contact">
+                                        <li><a href="">Support</a></li>
+                                        <li><a href="">1-876-223-0987</a></li>
+                                        <li><a href="">Email Support</a></li>
+                                        <li><a href="">Live chat</a></li>
+                                        <li><a href="">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                     <ul class="nav ">
+                                        <li><a href="">Suggested Resources</a><br> Supervision:project Handover</li>
+                                        <li><a href="">Exchange Requirements for facility handover(PDF)</a></li>
+                                        <li><a href="">How to draft portfolio handover(PDF)</a></li>
+                                        <li><a href="">Environmental and social Review procedures(PDF)</a></li>
+                                        <li><a href="">Life cycle page overview (guided tour)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                     <ul class="nav training">
+                                        <li><a href="" class="title">Training Resources</a></li>
+                                        <li><a href="">iportal eLearning</a></li>
+                                        <li><a href="">Training Classes</a></li>
+                                        <li><a href="">Lipsum dolor chat</a></li>
+                                        <li><a href="">Library liaste</a></li>
+                                        <li><a href="">Walk Through</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                               
+                </div>
+                
+            </div>
+            <!-- end of .pageWrapper -->
+            <div class="framwork-nav">
+                <li style="font-size: 20px;">Framework Components</li>
+                <li><div class="separator-box"></div></li>
+                <li><a href="tool-bar.html">Toolbar</a></li>
+                <li><a href="left-nav.html">Navigation</a></li>
+                <li class="active"><a href="task-panel.html">Task Panel</a></li>
+                <li><a href="help-support.html">Help & Support</a></li>
+                <li><hr/></li>
+                <li><a href='../form-controls.html' >Back to Pattern Library</a></li>
+            </div>
+            
+        </div>
+        <!-- end of .wrapper -->
+
+    
+
+    <!-- Main framework scripts //use CDN links -->
+    <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- JS Plugins -->
+    <!-- Bootstrap Tour -->
+    <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+    <!-- Kendo js plugins-->
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+    <!-- other plugins -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/masonary/masonry.pkgd.min.js"></script>
+    <!-- Bootstrap Tour -->
+    <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+    <!-- custom jQuery script -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+     <script type="text/javascript">
+		$(document).ready(function(){
+			$(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+				// remove any existing active elements
+				$(this).closest(".sg-tabs-container-task-panel")
+					   .find(".active-tab-item")
+					   .removeClass("active-tab-item");
+				// add active class to clicked element
+				$(this).addClass("active-tab-item");
+				$(this).closest(".sg-tabs-container-task-panel")
+					   .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+					   .addClass("active-tab-item");
+			});
+		});
+	</script>
+    
+</head>
+
+<body> 
+    <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script>  
+
+    <div class="container">
+        <div class="title">
+            <h3>Transaction Page</h3>
+        </div>
+        <div class="col-md-50">
+                                           <div class="sg-tabs-container-task-panel task-page transaction">
+                                                       <div class="gs-tabs-navigation">
+                                                            <span class="sg-tab-menu-item " data-item="1"> Sections</span>
+                                                            <span class="sg-tab-menu-item" data-item="2">Actions</span>
+                                                            <span class="sg-tab-menu-item active-tab-item" data-item="3"> Attachments(2)</span>
+                                                            
+                                                        </div>
+                                                    <div class="sg-tabs-body">
+                                                        <div class="sg-tab-content " data-item="1">
+                                                            
+                                                        </div>
+                                                        <div class="sg-tab-content" data-item="2">
+                                                            Item ONE contents loaded.
+                                                        </div>
+                                                        <div class="sg-tab-content active-tab-item" data-item="3">
+                                                            <div class="transaction-label">
+                                                                <div class="transaction-upload">
+                                                                        <span>Upload New</span>
+                                                                        <span>Link from IFC DOCS</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sg-form-element-task">
+                                                                <div class="sg-form-element-body">
+                                                                    <form>
+                                                                       
+                                                                       <div class="taransform-0">
+                                                                            <div class="transform-basic">
+                                                                             <p class="transform-title">Annual Report.pdf</p>
+                                                                             <p><span class="transform-row-title">Uploaded</span>
+                                                                                <span class="transform-row-colon">: </span>
+                                                                                <span class="transform-row-content">John Hayes | Nov 30 2017</span>
+                                                                             </p>    
+                                                                           </div>
+                                                                       </div>
+                                                                        <div class="trans-info">Basic Information:</div>
+                                                                       <div class="taransform-1">
+                                                                           <div class="transform-basic">
+                                                                             <p class="transform-title">Concept review minutes.pdf</p>
+                                                                             <p><span class="transform-row-title">Uploaded</span>
+                                                                                <span class="transform-row-colon">: </span>
+                                                                                <span class="transform-row-content">John Hayes | Nov 28 2017</span>
+                                                                             </p>    
+                                                                           </div>
+                                                                             <div class="transform-basic">
+                                                                             <p class="transform-title">Notes from E&amp;S Specialists.pdf</p>
+                                                                             <p><span class="transform-row-title">Uploaded</span>
+                                                                                <span class="transform-row-colon">: </span>
+                                                                                <span class="transform-row-content">Mark Robinson | Nov 25 2017</span>
+                                                                             </p>    
+                                                                           </div>
+                                                                       </div>
+                                                                        <div class="trans-info">Project Financing:</div>
+                                                                       <div class="taransform-1">
+                                                                            <div class="transform-basic">
+                                                                             <p class="transform-title">Excepteur sint occaecat.pdf</p>
+                                                                             <p><span class="transform-row-title">Uploaded</span>
+                                                                                <span class="transform-row-colon">: </span>
+                                                                                <span class="transform-row-content">John Hayes | Nov 24 2017</span>
+                                                                             </p>    
+                                                                           </div>
+                                                                       </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                  </div>
+        </div>
+        <div class="col-md-50 codepan">
+
+            <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
+        <div class="sg-tabs-container-task-panel">
+        <div class="gs-tabs-navigation">
+            <span class="sg-tab-menu-item active-tab-item" data-item="1"> Decision</span>
+            <span class="sg-tab-menu-item" data-item="2"> Attachments(2)</span>
+            <span class="sg-tab-menu-item" data-item="3">Activity log</span>
+        </div>
+        <div class="sg-tabs-body">
+            <div class="sg-tab-content active-tab-item" data-item="1">
+                <div class="sg-form-element-task">
+                    <span class="sg-form-card-title">PDS change Approval</span>
+                    <div class="sg-form-element-body">
+                        <form>
+                            <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <input type="text" class="sg-form-text-input" placeholder="Placeholder text" />
+                            </div>
+                            <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <textarea class="sg-form-textarea">Placeholder text</textarea>
+                            </div>
+                                <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <textarea class="sg-form-textarea">Placeholder text</textarea>
+                            </div>
+                            <div>
+                                <span class="sg-form-footer">
+                                    <button class="sg-form-submit-button button-active-state">SUBMIT</button>
+                                    <!-- <button class="sg-form-submit-button button-active-state">REASSIGN</button> -->
+                                    <button class="sg-form-cancel-button">CANCEL</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sg-tab-content" data-item="2">
+                Item TWO contents loaded.
+            </div>
+            <div class="sg-tab-content" data-item="3">
+                Item THREE contents loaded.
+            </div>
+            <div class="sg-tab-content" data-item="4">
+                Item ONE contents loaded.
+            </div>
+        </div>
+        </div>
+            </xmp></code></pre>
+        </div>
+
+       
+
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>

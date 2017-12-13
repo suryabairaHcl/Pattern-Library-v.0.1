@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+     <script type="text/javascript">
+		$(document).ready(function(){
+			$(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+				// remove any existing active elements
+				$(this).closest(".sg-tabs-container-task-panel")
+					   .find(".active-tab-item")
+					   .removeClass("active-tab-item");
+				// add active class to clicked element
+				$(this).addClass("active-tab-item");
+				$(this).closest(".sg-tabs-container-task-panel")
+					   .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+					   .addClass("active-tab-item");
+			});
+		});
+	</script>
+    
+</head>
+
+<body> 
+    <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script> 
+
+    <div class="container">
+        <div class="title">
+            <h3>Task Page Default</h3>
+        </div>
+        <div class="col-md-50">
+                                           <div class="sg-tabs-container-task-panel task-page">
+                                                       <div class="gs-tabs-navigation">
+                                                            <span class="sg-tab-menu-item active-tab-item" data-item="1"> Decision</span>
+                                                            <span class="sg-tab-menu-item" data-item="2"> Attachments(2)</span>
+                                                            <span class="sg-tab-menu-item" data-item="3">Activity log</span>
+                                                        </div>
+                                                    <div class="sg-tabs-body">
+                                                        <div class="sg-tab-content active-tab-item" data-item="1">
+                                                            <div class="sg-form-element-task">
+                                                                <div class="sg-form-element-body">
+                                                                    <form>
+                                                                        <div class="form-message-task">
+                                                                            <p>
+                                                                            <span style="color:#000000;">Disclosure Policy: Section III A 9 (d), In limited circumstances, IFC may delay the disclosure of certain information that it would otherwise make </span>
+                                                                            <span style="color:#0099FF;">...</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="select-form sg-form-group">
+                                                                            <label class="sg-form-label">Decision</label>
+                                                                            <select class="sg-form-select">
+                                                                            <option value="1">Cleared</option>
+                                                                            <option value="2">Approve</option>
+                                                                            <option value="3">return</option>
+                                                                            <option value="4">Reject</option>
+                                                                            </select>
+                                                                        </div>
+                                                                         <div class="form-radio">
+                                                                            <p><span>Disclosure Type:</span></p>
+                                                                           <form action="">
+                                                                            <input type="radio"  value="regular"> Regular<br>
+                                                                            <input type="radio"  value="partial"> Partially Delayed (Certain Identifying Information in SII)<br>
+                                                                            <input type="radio"  value="other"> Fully Delayed (Entire SII)
+                                                                            </form>
+                                                                        </div>
+                                                                         <div class="form-check">
+                                                                            <p><span>Disclosure Questionnaires:</span></p>
+                                                                            <span>
+                                                                             <label ><input type="checkbox"></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                            <span>
+                                                                             <label ><input type="checkbox" checked></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                            <span>
+                                                                             <label ><input type="checkbox"></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                            <span>
+                                                                             <label ><input type="checkbox" checked></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                            <span>
+                                                                             <label ><input type="checkbox"></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                            <span>
+                                                                             <label ><input type="checkbox"></label>
+                                                                             <span class="toggle-label">Delay Disclosure </span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="sg-form-group">
+                                                                            <label class="sg-form-label comments">comments</label>
+                                                                            <textarea class="sg-form-textarea" placeholder="Your text here"></textarea>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sg-tab-content" data-item="2">
+                                                            Item THREE contents loaded.
+                                                        </div>
+                                                        <div class="sg-tab-content" data-item="3">
+                                                            Item ONE contents loaded.
+                                                        </div>
+                                                    </div>
+                                  </div>
+        </div>
+        <div class="col-md-50 codepan">
+
+            <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
+        <div class="sg-tabs-container-task-panel">
+        <div class="gs-tabs-navigation">
+            <span class="sg-tab-menu-item active-tab-item" data-item="1"> Decision</span>
+            <span class="sg-tab-menu-item" data-item="2"> Attachments(2)</span>
+            <span class="sg-tab-menu-item" data-item="3">Activity log</span>
+        </div>
+        <div class="sg-tabs-body">
+            <div class="sg-tab-content active-tab-item" data-item="1">
+                <div class="sg-form-element-task">
+                    <span class="sg-form-card-title">PDS change Approval</span>
+                    <div class="sg-form-element-body">
+                        <form>
+                            <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <input type="text" class="sg-form-text-input" placeholder="Placeholder text" />
+                            </div>
+                            <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <textarea class="sg-form-textarea">Placeholder text</textarea>
+                            </div>
+                                <div>
+                                <span class="sg-form-input-label">Field Label</span>
+                                <textarea class="sg-form-textarea">Placeholder text</textarea>
+                            </div>
+                            <div>
+                                <span class="sg-form-footer">
+                                    <button class="sg-form-submit-button button-active-state">SUBMIT</button>
+                                    <!-- <button class="sg-form-submit-button button-active-state">REASSIGN</button> -->
+                                    <button class="sg-form-cancel-button">CANCEL</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sg-tab-content" data-item="2">
+                Item TWO contents loaded.
+            </div>
+            <div class="sg-tab-content" data-item="3">
+                Item THREE contents loaded.
+            </div>
+            <div class="sg-tab-content" data-item="4">
+                Item ONE contents loaded.
+            </div>
+        </div>
+        </div>
+            </xmp></code></pre>
+        </div>
+
+       
+
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>
