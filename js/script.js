@@ -19,6 +19,7 @@ document.getElementById("navMenu").innerHTML =
             // '<li><a href="./data-grid.html">Data Grid</a></li>'+
             // '<li><a href="./transaction-form.html">Transaction form</a></li>'+
             // '<li><hr/></li>'+
+            
             '<li class="framwork-components"><ul>Framework Components'+
                 '<li class=""><a href="#">Toolbar</a></li>'+
                 '<li class=""><a href="#">Breadcrumbs</a></li>'+
