@@ -2063,3 +2063,117 @@ div#tooltip-container {
     font-size: 24px;
     color: #FFFFFF;
     }
+  /* check box */
+  .squaredOne {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 20px auto;
+  background: #fcfff4;
+  border:1px solid #0071bc;
+  border-radius:2px;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ }
+.squaredOne label {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.squaredOne label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background: #0071bc;
+  background: linear-gradient(top, red 0%, black 100%);
+  opacity: 0;
+}
+.squaredOne label:hover::after {
+  opacity: 0.3;
+}
+.squaredOne input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredOne input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/*radio button */
+
+.roundedOne {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 20px auto;
+  background: #fcfff4;
+  border-radius: 50px;
+  border:1px solid #0071bc;
+}
+.roundedOne label {
+  cursor: pointer;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50px;
+
+}
+.roundedOne label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #0071bc;
+  opacity: 0;
+  border-radius: 50px;
+}
+.roundedOne label:hover::after {
+  opacity: 0.3;
+}
+.roundedOne input[type=checkbox] {
+  visibility: hidden;
+}
+.roundedOne input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/* toggle-switch */
+
+.slideOne {
+  background: #0071bc;
+  position: relative;
+   width: 34px;
+    height: 14px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 113, 188, 1);
+    border-radius: 8px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.slideOne label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+}
+.slideOne input[type=checkbox] {
+  visibility: hidden;
+}
+.slideOne input[type=checkbox]:checked + label {
+  left: 16px;
+}
+.slideOne input[type=checkbox]:checked + .slideOne {
+ background: #333;
+}

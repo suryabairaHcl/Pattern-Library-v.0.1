@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+     
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+    
+    <script type="text/javascript">
+                $(document).ready(function() {
+            $('.toast-triggers').on('click', function(e) {
+                var $toast = $('.toast-template[data-template=' + $(e.target).data('templateKey') + '] .toast').clone();
+                var timer;
+
+                if ($toast.hasClass("urgent")) {
+                    $("#toast-container .urgent").append($toast);
+                }
+                else {
+                    $("#toast-container").append($toast);
+                    timer = setTimeout(function(){
+                    $toast.fadeOut(300, function() { $(this).remove(); });
+                    }, 3000);
+                }
+
+                $toast.on('click', function(){
+                    $toast.fadeOut(300, function() { $(this).remove(); });
+                clearTimeout(timer);
+                })
+            });
+            });
+
+	</script>
+</head>
+
+<body>
+    <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script>
+   <div class="container">
+        <div class="title">
+            <h3> Toggle  Switch</h3>
+        </div>
+               <div class="col-md-100 greybox">
+                                     <section title=".slideOne">
+                                        <div class="slideOne">  
+                                        <input type="checkbox" value="None" id="slideOne" name="check" checked />
+                                        <label for="slideOne"></label>
+                                        </div>
+                                    </section>
+
+               </div>  
+        <div class="col-md-100 codepan">
+
+            <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
+                   <section title=".slideOne">
+                        <div class="slideOne">  
+                        <input type="checkbox" value="None" id="slideOne" name="check" checked />
+                        <label for="slideOne"></label>
+                        </div>
+                    </section>
+            </xmp></code></pre>
+        </div>        
+    </div>
+</body>
+
+</html>

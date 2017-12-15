@@ -43,12 +43,12 @@ document.getElementById("navMenu").innerHTML =
             '<li class="framwork-components"><ul>Form Controls'+
                 '<li class=""><a href="#">Date Picker</a></li>'+
                 '<li class=""><a href="#">Time Picker</a></li>'+
-                '<li class=""><a href="#">Radio Buttons</a></li>'+
-                '<li class=""><a href="#">Check Box</a></li>'+
+                '<li class=""><a href="./radio-button.html">Radio Buttons</a></li>'+
+                '<li class=""><a href="./check-box.html">Check Box</a></li>'+
                 '<li class=""><a href="./buttons.html">Buttons</a></li>'+
                 '<li class=""><a href="#">Input fields (inc scalable text field)</a></li>'+
                 '<li class=""><a href="#">Links (Actionable links)</a></li>'+
-                '<li class=""><a href="#">Toggle / Switch</a></li>'+
+                '<li class=""><a href="./toggle-switch.html">Toggle / Switch</a></li>'+
                 '</ul>'+
             '</li>'+
             '<li class="framwork-components"><ul>Selection Control'+
