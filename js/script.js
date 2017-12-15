@@ -19,7 +19,6 @@ document.getElementById("navMenu").innerHTML =
             // '<li><a href="./data-grid.html">Data Grid</a></li>'+
             // '<li><a href="./transaction-form.html">Transaction form</a></li>'+
             // '<li><hr/></li>'+
-            
             '<li class="framwork-components"><ul>Framework Components'+
                 '<li class="component-library"><a href="./framework components/left-nav.html">Left Navigation</a></li>'+
                 '<li class="component-library"><a href="./framework components/tool-bar.html">Tool bar</a></li>'+
