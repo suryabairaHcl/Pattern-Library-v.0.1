@@ -2099,64 +2099,114 @@ div#tooltip-container {
 .squaredOne input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
-
-/*radio button */
-
-.roundedOne {
+/*sqaure check*/
+  .squaredOne1,.squaredOne2 ,.squaredOne3,.squaredOne4 {
   width: 24px;
   height: 24px;
   position: relative;
   margin: 20px auto;
   background: #fcfff4;
-  border-radius: 50px;
-  border:1px solid #0071bc;
-}
-.roundedOne label {
-  cursor: pointer;
+  border:1px solid #333;
+  border-radius:2px;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ }
+.squaredOne1 label,.squaredOne2 label ,.squaredOne3 label,.squaredOne4 label  {
   position: absolute;
-  left: 3px;
-  top: 3px;
-  border-radius: 50px;
+  top: 0px;
+  left: 0px;
+}
+.squaredOne1 label:after,.squaredOne2 label:after,.squaredOne3 label:after,.squaredOne4 label:after {
+    font-size: 23px;
+    text-align: center;
+    content: '\2713';
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    background: #0071bc;
+    opacity: 0;
+    padding: 2px;
+}
+.squaredOne1 label:hover::after,.squaredOne2 label:hover::after,
+.squaredOne3 label:hover::after,.squaredOne4 label:hover::after {
+  opacity: 0.3;
+}
+.squaredOne1 input[type=checkbox],.squaredOne2 input[type=checkbox],
+.squaredOne3 input[type=checkbox],.squaredOne4 input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredOne1 input[type=checkbox]:checked + label:after,
+.squaredOne2 input[type=checkbox]:checked + label:after,
+.squaredOne3 input[type=checkbox]:checked + label:after,
+.squaredOne4 input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.check-filter {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*radio button */
+
+.roundedOne,.roundedOne1,.roundedOne2 {
+  position: relative;
+}
+
+.roundedOne label ,.roundedOne1 label, .roundedOne2 label {
+   cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ababab;
+    background: #fff;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
 
 }
-.roundedOne label:after {
+.roundedOne label:after ,.roundedOne1 label:after, .roundedOne2 label:after{
   content: '';
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 3px;
+  left: 3px;
   background: #0071bc;
   opacity: 0;
   border-radius: 50px;
 }
-.roundedOne label:hover::after {
+
+roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOne2 input:checked ~ label{
+  border: 1px solid #007ebf;
+}
+
+.roundedOne label:hover::after,.roundedOne1 label:hover::after,.roundedOne2 label:hover::after {
   opacity: 0.3;
 }
-.roundedOne input[type=checkbox] {
+.roundedOne input[type=checkbox],.roundedOne1 input[type=checkbox],.roundedOne2 input[type=checkbox] {
   visibility: hidden;
 }
-.roundedOne input[type=checkbox]:checked + label:after {
+.roundedOne input[type=checkbox]:checked + label:after,
+.roundedOne1 input[type=checkbox]:checked + label:after,
+.roundedOne2 input[type=checkbox]:checked + label:after 
+{
   opacity: 1;
 }
 
 /* toggle-switch */
 
 .slideOne {
-  background: #0071bc;
   position: relative;
-   width: 34px;
+    width: 34px;
     height: 14px;
     box-sizing: border-box;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0, 113, 188, 1);
-    border-radius: 8px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.slideOne label {
+.slideOne .buttonPop {
   display: block;
   width: 20px;
   height: 20px;
@@ -2166,14 +2216,260 @@ div#tooltip-container {
   cursor: pointer;
   background: #fff;
   border-radius: 50px;
+  box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
 }
 .slideOne input[type=checkbox] {
-  visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    width: 34px;
+    height: 14px;
+    position: absolute;
+    top: -5px;
 }
-.slideOne input[type=checkbox]:checked + label {
-  left: 16px;
+
+.slideOne input:checked ~ .buttonPop {
+  left:16px;
+  box-shadow: -1px 0px 2px 0px rgba(0,0,0,0.5);
 }
-.slideOne input[type=checkbox]:checked + .slideOne {
- background: #333;
+
+.slideOne > input ~ label{
+    position: absolute;
+    top: -2px;
+    left: 41px;
+    white-space: nowrap;
+    display: block;
+    font-size: 15px;
 }
+
+.slideOne > input ~ label::after {
+  content: ' off';
+}
+
+.slideOne > input:checked ~ label::after {
+  content: ' on';
+}
+
+.slideOne input ~ .state{
+  background: #333;
+  border:1px solid #333;
+  border-radius: 8px;
+  width: 32px;
+  height: 14px;
+  position: absolute;
+  top: -1px;
+}
+
+.slideOne input:checked ~ .state{
+  background: #0071bc;
+  border:1px solid #0071bc;
+}
+
+.col-md-100.greybox.date-picker {
+    min-height: 400px;
+}
+
+.item-title {
+    width: 383px;
+    height: 56px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-right: 0px;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*date picker */
+div#ui-datepicker-div {
+    padding: 23px;
+    height: 305px;
+    top: 229px !important;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 211, 218);
+    border-radius: 2px;
+    width: 304px;
+}
+table.ui-datepicker-calendar {
+    width: 268px;
+    height: 262px;
+}  
+a.ui-datepicker-prev.ui-corner-all {
+    float: left;
+}
+a.ui-datepicker-next.ui-corner-all {
+    float: right;
+}
+.ui-datepicker-title {
+    font-family: Roboto-Bold, "Roboto Bold", Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+} 
+table.ui-datepicker-calendar thead {
+    padding: 20px !important;
+    font-family: Roboto-Medium, "Roboto Medium", Roboto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 3;
+}
+  a.ui-state-default {
+    text-decoration: none;
+    font-family: Roboto-Regular, Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    outline: none !important;
+}       
+input#datepicker1 {
+    width: 155px;
+    height: 40px;
+    font-family: Roboto-Bold, "Roboto Bold", Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    padding: 1px 0px 1px 0px;
+}
+input#datepicker2 {
+    width: 155px;
+    height: 40px;
+    font-family: Roboto-Bold, "Roboto Bold", Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    padding: 1px 0px 1px 0px;
+}  
+input#datepicker:focus {
+     transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}    
+
+input#basicExample {
+    padding: 10px;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 155px;
+    height: 41px;
+    box-sizing: border-box;
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 211, 218);
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url(../images/ic_arrow_drop_down_24px.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+li.ui-menu-item {
+    text-align: left;
+    font-size: 14px;
+} 
+.ui-timepicker-container.ui-timepicker-standard {
+    height: 142px !important;
+}
+.ui-corner-all .ui-state-hover{
+ background: none !important;
+ border: none !important;
+}
+.time-picker {
+    padding-right: 20px;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    color: #5C646D;
+}
+.flex-input{
+    align-items: center;
+    display: flex;
+     padding-right: 20px;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    color: #5C646D;
+}
+.flex-container {
+    display: flex;
+}       
+span.radio-label {
+    padding: 20px;
+}  
+
+/*input field*/
+.sg-form-group.inpul-label {
+    width: 365px;
+    height: 36px;
+    background-color: transparent;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1F292F;
+    text-align: left;
+    border-color: transparent;
+}
+.sg-form-group.droplist-label select {
+    width: 379px;
+    height: 40px;
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1F292F;
+    outline-style: none;
+    text-decoration: none;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(204, 211, 218, 1);
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url(../images/ic_arrow_drop_down_24px.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+.sg-form-group.textarea-label {
+    width: 745px;
+    height: 136px;
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1F292F;
+    text-align: left;
+    border-color: transparent;
+    outline-style: none;
+}    
+.sg-form-group.droplist-label {
+    padding-top: 20px;
+    font-size: 14px;
+}  

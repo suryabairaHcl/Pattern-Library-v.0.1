@@ -27,7 +27,7 @@ document.getElementById("navMenu").innerHTML =
                 '<li class=""><a href="./tabs.html">Navigation-Secondary (Tabs)</a></li>'+
                 '<li class=""><a href="./vertical-nav.html">Navigation-Vertical</a></li>'+
                 '<li class=""><a href="#">Help & Support</a></li>'+
-                '<li class=""><a href="#">Form and Templates Panel</a></li>'+
+                '<li class=""><a href="./form-controls.html">Form and Templates Panel</a></li>'+
                 
                 '<li class=""><a href="#">Task/Notification Panel</a></li>'+
                 '<li class=""><a href="#">Header Ribbon</a></li>'+
@@ -41,8 +41,8 @@ document.getElementById("navMenu").innerHTML =
                 '</ul>'+
             '</li>'+
             '<li class="framwork-components"><ul>Form Controls'+
-                '<li class=""><a href="#">Date Picker</a></li>'+
-                '<li class=""><a href="#">Time Picker</a></li>'+
+                '<li class=""><a href="./date-picker.html">Date Picker</a></li>'+
+                '<li class=""><a href="./time-picker.html">Time Picker</a></li>'+
                 '<li class=""><a href="./radio-button.html">Radio Buttons</a></li>'+
                 '<li class=""><a href="./check-box.html">Check Box</a></li>'+
                 '<li class=""><a href="./buttons.html">Buttons</a></li>'+
