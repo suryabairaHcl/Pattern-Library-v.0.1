@@ -150,3 +150,8 @@ li.framwork-components ul {
     color: #A7B4BB;
     margin-bottom: 30px;
 }
+.container .navbar-top{
+	top: 60px !important;
+    left: 18% !important;
+    width: 81% !important;
+}

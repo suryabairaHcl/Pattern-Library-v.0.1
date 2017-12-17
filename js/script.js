@@ -21,9 +21,9 @@ document.getElementById("navMenu").innerHTML =
             // '<li><hr/></li>'+
             
             '<li class="framwork-components"><ul>Framework Components'+
-                '<li class=""><a href="#">Toolbar</a></li>'+
+                '<li class=""><a href="./tool-bar.html">Toolbar</a></li>'+
                 '<li class=""><a href="#">Breadcrumbs</a></li>'+
-                '<li class=""><a href="#">Navigation-Primary (Left Nav)</a></li>'+
+                '<li class=""><a href="./left-nav.html">Navigation-Primary (Left Nav)</a></li>'+
                 '<li class=""><a href="./tabs.html">Navigation-Secondary (Tabs)</a></li>'+
                 '<li class=""><a href="./vertical-nav.html">Navigation-Vertical</a></li>'+
                 '<li class=""><a href="#">Help & Support</a></li>'+
@@ -46,7 +46,7 @@ document.getElementById("navMenu").innerHTML =
                 '<li class=""><a href="./radio-button.html">Radio Buttons</a></li>'+
                 '<li class=""><a href="./check-box.html">Check Box</a></li>'+
                 '<li class=""><a href="./buttons.html">Buttons</a></li>'+
-                '<li class=""><a href="#">Input fields (inc scalable text field)</a></li>'+
+                '<li class=""><a href="./input-field.html">Input fields (inc scalable text field)</a></li>'+
                 '<li class=""><a href="#">Links (Actionable links)</a></li>'+
                 '<li class=""><a href="./toggle-switch.html">Toggle / Switch</a></li>'+
                 '</ul>'+

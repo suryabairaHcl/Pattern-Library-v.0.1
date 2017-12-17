@@ -2068,7 +2068,7 @@ div#tooltip-container {
   width: 24px;
   height: 24px;
   position: relative;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   background: #fcfff4;
   border:1px solid #0071bc;
   border-radius:2px;
@@ -2104,7 +2104,7 @@ div#tooltip-container {
   width: 24px;
   height: 24px;
   position: relative;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   background: #fcfff4;
   border:1px solid #333;
   border-radius:2px;
@@ -2472,4 +2472,32 @@ span.radio-label {
 .sg-form-group.droplist-label {
     padding-top: 20px;
     font-size: 14px;
+} 
+/*filters*/
+.catogories-all {
+    padding: 10px 0px;
+    align-items: center;
+    display: flex;
+}  
+.doc-list {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}  
+span.check-title {
+    padding-left: 10px;
+    margin-top: 3px;
+}
+.drop-more {
+    padding: 0px 0px 18px;
+    margin-left: -76px;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #0071bc;
+    text-align: center;
+}  
+.drop-more i {
+    color: #000;
 }  

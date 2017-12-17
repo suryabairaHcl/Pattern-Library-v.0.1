@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <title>IFC | iPortal</title>
+
+    <!-- main css stylesheet that imports all the styles (see ../sass/style.scss for reference) -->
+    <link href="./framework components/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./framework components/css/nc-icon.css">
+
+</head>
+
+<body>
+     <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script>
+    <div class="container">
+    <div id="wrapper">
+  
+              <div class="container-fluid">
+            <div class="row">
+                <div class="navbar navbar-fixed-top navbar-top">
+                    <div class="ifc-logo">
+                        <a href="#"><img src="img/iportal-logo.png" alt="" /></a>
+                    </div>
+                    <div>
+                    <a href=""> <span class="all-label">All</span><span class="fa arrow"><span class="caret"></span></a>
+                    </div>    
+                    <div class="navbar-search">
+                        <div class="search-icon">
+                            <i class="nc-icon nc-zoom-2"></i>
+                        </div>
+
+                        <!--<form role="search" class="navbar-form-custom" action="search_results.html">-->
+                                <input class="search" placeholder="" name="top-search" id="top-search">
+                        <!--</form>-->
+                    </div>
+                    
+                    <div class="ifc-view">
+                        <div class="nt-dropdown">
+                            <div class="dropdown">
+
+                                <button class="btn btn-default btn-sidebar dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                     <span class="title">Operational View</span><span class="fa arrow"></span><span class="caret"></span>
+                                    </button>
+                                
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a href="#">Investment Officer</a></li>
+                                    <li><a href="#">Portfolio Manager</a></li>
+                                    <li><a href="#">Manager</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                     <div class="accnt-view">
+                        <a href="#">
+                            <i class="nc-icon nc-circle-10"></i>
+                        </a>
+                    </div> 
+                    <div class="notification-icons">
+                        <ul class="navbar-top-links">
+                            <li class="" data-panel="tasks-sidebar">
+                                <a class="open-task count-info new-notification" href="#">
+                                    <p>155</p>
+                                    <i class="nc-icon nc-todo-2"></i>
+                                </a>
+                            </li>
+
+                            <li class="" data-panel="notifications-sidebar">
+                                <a class="open-notifications count-info new-notification" href="#">
+                                    <i class="nc-icon nc-bell-53-2"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- <div class="pageWrapper"> 
+            
+            <div class="framwork-nav">
+                <li style="font-size: 20px;">Framework Components</li>
+                <li><div class="separator-box"></div></li>
+                <li class="active"><a href="">Toolbar</a></li>
+                <li><a href="left-nav.html">Navigation</a></li>
+                <li><a href="task-panel.html">Task Panel</a></li>
+                <li><a href="help-support.html">Help & Support</a></li>
+                <li><hr/></li>
+                <li><a href='../form-controls.html' >Back to Pattern Library</a></li>
+
+            </div> -->
+        </div> 
+        <!-- end of .pageWrapper -->
+    </div>
+    </div>
+    <!-- end of #wrapper -->
+
+    <!-- Main framework scripts //use CDN links -->
+    <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JS -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+    <!-- JS Plugins -->
+    <!-- Bootstrap Tour -->
+    <!-- <script src="./framework components/js/plugins/bootstrapTour/bootstrap-tour.min.js"></script> -->
+    <!-- Kendo js plugins-->
+    <!-- <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script> -->
+    <!-- other plugins -->
+    <script src="./framework components/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="./framework components/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="./framework components/js/plugins/masonary/masonry.pkgd.min.js"></script>
+    <!-- Bootstrap Tour -->
+    <script src="./framework components/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+    <!-- custom jQuery script -->
+    <script src="./framework components/js/custom.js"></script>
+
+</body>
+
+</html>
