@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+                // remove any existing active elements
+                $(this).closest(".sg-tabs-container")
+                       .find(".active-tab-item")
+                       .removeClass("active-tab-item");
+                // add active class to clicked element
+                $(this).addClass("active-tab-item");
+                $(this).closest(".sg-tabs-container")
+                       .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+                       .addClass("active-tab-item");
+            });
+        });
+    </script>
+    
+</head>
+
+<body> 
+    <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script> 
+    <div class="container">
+        <div class="title">
+            <h3>Cards</h3>
+        </div>
+        <div class="col-md-100">
+            <div class="greybox">
+            <div class="interactive-view-container" data-id="id-set-1">
+<section class="sg-demo-wrapper">
+
+                <div class="card card-md-4">
+                    <div class="card-header">
+                        <h2>Card Heading</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">More<i class="nc-icon nc-ic_navigate_next_24px"></i></a></li>
+                    </div>
+                </div>
+                <div class="card card-md-4">
+
+                    <div class="card-header-tabs sg-tabs-container">
+                        <h2>Card Heading</h2>
+                        <ul class="gs-tabs-navigation">
+                            <li class="sg-tab-menu-item active-tab-item" data-item="1">Sub Heading One</li>
+                            <li class="sg-tab-menu-item" data-item="2">Sub Heading Two</li>
+                        </ul>
+                    </div>
+                    <div class="card-content">
+                        <div class="sg-tab-content active-tab-item" data-item="1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis.</p>
+                        </div>
+                        <div class="sg-tab-content" data-item="2">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">More<i class="nc-icon nc-ic_navigate_next_24px"></i></a></li>
+                    </div>
+                </div>
+            </div>
+            </section>
+            </div>
+        </div>    
+                
+
+
+        <div class="col-md-100 codepan">
+            <pre class="prettyprint language-html"><code class="token tag">
+            <xmp data-id="id-set-1"></xmp>
+            </code></pre>
+        </div>
+
+
+        
+
+</body>
+</html>

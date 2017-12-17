@@ -4684,7 +4684,7 @@ button.btn.btn-info.pull-right.closeFooter.help-btn span {
   background: #0071BC;
   margin-top: 18px;
   float: left;
-  /*position: fixed;*/
+  position: fixed;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }

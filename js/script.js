@@ -22,18 +22,18 @@ document.getElementById("navMenu").innerHTML =
             
             '<li class="framwork-components"><ul>Framework Components'+
                 '<li class=""><a href="./tool-bar.html">Toolbar</a></li>'+
-                '<li class=""><a href="#">Breadcrumbs</a></li>'+
+                '<li class=""><a href="./Breadcrumbs.html">Breadcrumbs</a></li>'+
                 '<li class=""><a href="./left-nav.html">Navigation-Primary (Left Nav)</a></li>'+
                 '<li class=""><a href="./tabs.html">Navigation-Secondary (Tabs)</a></li>'+
                 '<li class=""><a href="./vertical-nav.html">Navigation-Vertical</a></li>'+
-                '<li class=""><a href="#">Help & Support</a></li>'+
+                '<li class=""><a href="./help-support.html">Help & Support</a></li>'+
                 '<li class=""><a href="./form-controls.html">Form and Templates Panel</a></li>'+
                 
                 '<li class=""><a href="#">Task/Notification Panel</a></li>'+
-                '<li class=""><a href="#">Header Ribbon</a></li>'+
-                '<li class=""><a href="#">Footer w/ Actions (old lightbox model)</a></li>'+
-                '<li class=""><a href="#">Cards- different types of cards</a></li>'+
-                '<li class=""><a href="#">Timeline</a></li>'+
+                '<li class=""><a href="./header-ribbon.html">Header Ribbon</a></li>'+
+                '<li class=""><a href="./footer-wAction.html">Footer w/ Actions (old lightbox model)</a></li>'+
+                '<li class=""><a href="./cards.html">Cards- different types of cards</a></li>'+
+                '<li class=""><a href="./partner-ribbon.html">Timeline</a></li>'+
                 '<li class=""><a href="#">Project Cycle</a></li>'+
                 '<li class=""><a href="#">Bulk Edit</a></li>'+
                 '<li class=""><a href="./filters.html">Filters</a></li>'+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/nucleo-outline.css">   -->
+    <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+				// remove any existing active elements
+				$(this).closest(".sg-tabs-container")
+					   .find(".active-tab-item")
+					   .removeClass("active-tab-item");
+				// add active class to clicked element
+				$(this).addClass("active-tab-item");
+				$(this).closest(".sg-tabs-container")
+					   .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+					   .addClass("active-tab-item");
+			});
+		});
+	</script>
+</head>
+
+<body>
+     <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script>
+    <div class="container">
+        <div class="title">
+            <h3>Footer w/Action</h3>
+        </div>
+
+                    <div class="col-md-100"> 
+                        <div class="greybox-fullwidth">
+                        <div class="footer">
+                            <div class="footer-action">
+                                <button class="btn btn-primary pull-right">Submit</button>
+                                <button class="btn btn-primary pull-right">Save</button>
+                                <button class="btn btn-secondary pull-right">Cancel</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div> 
+                        </div>       
+                                
+                    </div>
+                 <div class="col-md-100 codepan">
+
+            <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">    
+    <div class="footer">
+        <div class="footer-action">
+            <button class="btn btn-primary pull-right">Submit</button>
+            <button class="btn btn-primary pull-right">Save</button>
+            <button class="btn btn-secondary pull-right">Cancel</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>  
+            
+            </xmp></code></pre>
+        </div>
+</body>
+
+</html>

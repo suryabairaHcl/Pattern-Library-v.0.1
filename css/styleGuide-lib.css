@@ -916,11 +916,6 @@ li.list-1 {
 span.right-tool {
     padding: 5px;
 }
-.adv-search-layout {
-    padding: 15px;
-    color:#fff;
-    background: #193958;
-}
 /* .roundedTwo */
 .roundedTwo {
   width: 28px;
@@ -1431,7 +1426,7 @@ li .page-link:focus, li .page-link:hover {
   text-decoration: none;
 }
 section.sg-demo-wrapper h2 {
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* Modal box */
@@ -1901,9 +1896,44 @@ div#tooltip-container {
         height: 90px;
         align-items: center;  
         display: flex;
-        padding: 15px;
+        padding: 15px 30px;
         color: #fff;
         background: #193958;
+        }
+      .header-ribbon{
+        display: flex;
+        flex-direction: column;
+         color:#ffffff !important;
+        }
+        .header-ribbon h2, .header-ribbon label, .header-ribbon p{
+        color:#ffffff !important;
+        }
+        .header-ribbon h2{
+          font-family: 'Roboto Slab', serif !important;
+          font-size: 24px;
+          min-width: 320px;
+        }
+        .data-grid{
+          width: auto;
+          padding-right: 30px;
+          min-width: 400px;
+        }
+        .pair p i{
+        font-size: 24px;
+        position: relative;
+        top: 7px;
+        margin-right: 5px;
+      }
+        .data-grid label, .value{
+          float: left;
+        }
+        .data-grid .value{
+          font-weight: bold;
+          margin-left: 10px;
+        }
+        .data-grid .pair{
+          clear: both;
+          padding: 5px;
         }
       .partner-ribbon{
           display: flex;
@@ -2500,4 +2530,124 @@ span.check-title {
 }  
 .drop-more i {
     color: #000;
+}  
+/*----- CSS by alok--------*/
+.breadcrumb{
+  width: 100%;
+  max-height: 65px;
+  border-bottom: 1px solid #CCD3DA;
+  background-color: #ffffff;
+  display: block;
+}
+.breadcrumb ul li a{
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  margin-left: 10px;
+  padding: 25px 20px;
+  color: #1F292F;
+}
+.breadcrumb ul li a:hover{
+  color: #0071BC;
+}
+.breadcrumb ul li i{
+    padding: 25px 0px;
+    float: left;
+    /*opacity: .5;*/
+    color: #CCD3DA;
+}
+.breadcrumb ul li.active{
+  font-weight: bold;
+}
+/*---breadcrumb css ends---*/
+/*----footer css starts-----*/
+
+.footer{
+  width: 100%;
+  border-bottom: 1px solid #CCD3DA;
+  background-color: #ffffff;
+  display: block;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0px -4px 6px -2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px -4px 6px -2px rgba(0,0,0,0.3);
+  box-shadow: 0px -4px 6px -2px rgba(0,0,0,0.3);
+}
+.footer-action{
+  float: right;
+  width: 50%;
+}
+.footer-action .btn{
+  margin-left: 20px;
+}
+/*footer css ends*/
+/*card css starts*/
+.card{
+  background-color: #ffffff;
+  padding: 30px;
+  border:1px solid #D9E2E6;
+}
+.card-md-4{
+  width: 36%;
+  float: left;
+  margin-right: 30px;
+}
+.card-header{
+  border-bottom: 1px solid #585E62;
+  padding-bottom: 15px;
+}
+.card-header-tabs h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-header h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-footer{
+  border-top: 1px solid #585E62;
+  padding: 20px 0px;
+}
+.card-footer li{
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+.card-footer li:last-child{
+  float: right;
+  margin-right: 0px;
+  top: -10px;
+  position: relative;
+}
+.card-footer li:last-child i{
+  font-size: 24px;
+    position: relative;
+    bottom: -7px;
+  }
+.card-footer li a{
+  text-decoration: none;
+  color: #0071BC;
+  font-weight: bold; 
+  }
+.card-content{
+  padding: 20px 0px;
+}
+.card-content{
+  line-height: 20px;
+}
+.card .sg-tabs-container .gs-tabs-navigation{
+  width: 100%;
+    padding: 15px 0 0 0;
+    border-bottom: 1px solid #CCD3DA;
+    margin-bottom: 0px;
+}
+.card .sg-tabs-container .gs-tabs-navigation .sg-tab-menu-item{
+  display:inline-block;
+  padding:0px 0px 10px 0px;
+  margin:auto 0px;
+  margin-right: 30px;
+  cursor:pointer;
+  font-size: 14px;
+  position: relative;
+  top: 1px;
+  color: #585E62;
 }  
