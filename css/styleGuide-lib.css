@@ -2146,7 +2146,7 @@ div#tooltip-container {
   left: 0px;
 }
 .squaredOne1 label:after,.squaredOne2 label:after,.squaredOne3 label:after,.squaredOne4 label:after {
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
     content: '\2713';
     width: 23px;
@@ -2157,7 +2157,7 @@ div#tooltip-container {
     color: #fff;
     background: #0071bc;
     opacity: 0;
-    padding: 2px;
+    padding: 4px;
 }
 .squaredOne1 label:hover::after,.squaredOne2 label:hover::after,
 .squaredOne3 label:hover::after,.squaredOne4 label:hover::after {
@@ -2747,3 +2747,14 @@ div#page-break {
  .ui-widget{
     top: 24px !important;
 } 
+.adv-search-layout p {
+    display: flex;
+    align-items: center;
+}
+span.link {
+    font-family: 'Roboto-Bold', 'Roboto Bold', 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #0071BC;
+}  
