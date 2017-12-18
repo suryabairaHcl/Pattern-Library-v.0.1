@@ -29,7 +29,7 @@ document.getElementById("navMenu").innerHTML =
                 '<li class=""><a href="./help-support.html">Help & Support</a></li>'+
                 '<li class=""><a href="./form-controls.html">Form and Templates Panel</a></li>'+
                 
-                '<li class=""><a href="#">Task/Notification Panel</a></li>'+
+                '<li class=""><a href="./task-panel.html">Task/Notification Panel</a></li>'+
                 '<li class=""><a href="./header-ribbon.html">Header Ribbon</a></li>'+
                 '<li class=""><a href="./footer-wAction.html">Footer w/ Actions (old lightbox model)</a></li>'+
                 '<li class=""><a href="./cards.html">Cards- different types of cards</a></li>'+
