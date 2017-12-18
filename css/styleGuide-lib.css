@@ -2227,7 +2227,7 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
 
 /* toggle-switch */
 
-.slideOne {
+.slideOne,.slideOne1 {
   position: relative;
     width: 34px;
     height: 14px;
@@ -2236,7 +2236,7 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.slideOne .buttonPop {
+.slideOne .buttonPop,.slideOne1 .buttonPop {
   display: block;
   width: 20px;
   height: 20px;
@@ -2249,7 +2249,7 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
   box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.5);
   transition: all 0.4s ease;
 }
-.slideOne input[type=checkbox] {
+.slideOne input[type=checkbox],.slideOne1 input[type=checkbox] {
     opacity: 0;
     z-index: 1;
     width: 34px;
@@ -2258,12 +2258,12 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
     top: -5px;
 }
 
-.slideOne input:checked ~ .buttonPop {
+.slideOne input:checked ~ .buttonPop,.slideOne1 input:checked ~ .buttonPop {
   left:16px;
   box-shadow: -1px 0px 2px 0px rgba(0,0,0,0.5);
 }
 
-.slideOne > input ~ label{
+.slideOne > input ~ label,.slideOne1 > input ~ label{
     position: absolute;
     top: -2px;
     left: 41px;
@@ -2271,16 +2271,26 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
     display: block;
     font-size: 15px;
 }
+.slideOne1 > input ~ label{
+    top: -6px;
+}  
 
 .slideOne > input ~ label::after {
   content: ' off';
 }
-
-.slideOne > input:checked ~ label::after {
-  content: ' on';
+.slideOne1 > input ~ label::after  {
+  content: ' me';
 }
 
-.slideOne input ~ .state{
+
+.slideOne > input:checked ~ label::after{
+  content: ' on';
+}
+.slideOne1 > input:checked ~ label::after {
+  content: ' others';
+}
+
+.slideOne input ~ .state,.slideOne1 input ~ .state{
   background: #333;
   border:1px solid #333;
   border-radius: 8px;
@@ -2290,7 +2300,7 @@ roundedOne input:checked ~ label ,.roundedOne1 input:checked ~ label, .roundedOn
   top: -1px;
 }
 
-.slideOne input:checked ~ .state{
+.slideOne input:checked ~ .state,.slideOne1 input:checked ~ .state{
   background: #0071bc;
   border:1px solid #0071bc;
 }
@@ -2693,4 +2703,33 @@ div#page-break {
     background: #fff;
     color: #0071bc;
     font-size: 14px;
+}  
+/*help-footer*/
+.container div#help-footer {
+    margin-left: 100px;
+    width: 83%;
+}
+.container .help-column{
+ padding-left: 52px;
+}    
+.container .sidebar-filters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container div#tasks-sidebar{
+  margin-left: 1125px;
+  top: 118px;
+}
+.toggle-slider {
+    padding-right: 60px;
+}
+  .container #wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+.container div#notifications-sidebar {
+    margin-left: 1216px;
+    top: 120px;
 }  
