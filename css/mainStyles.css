@@ -27,10 +27,11 @@ h3{margin-bottom: 20px !important;}
 	background-color:#ffffff;
 	border-bottom: 1px solid #e2e2e2;
 	height: 60px;
-	position: fixed;
+	/* position: fixed; */
 	top: 0px;
 }
 .headerbar h2{
+	margin: 0;
 	font-weight: 400;
 	padding: 20px 0px;
 	font-family: 'Roboto Slab', serif;
@@ -39,6 +40,7 @@ h3{margin-bottom: 20px !important;}
 	text-transform: uppercase;
 }
 .logo{
+	margin: 0;
 	padding: 18px 10px;
 }
 .styleguide-navigation{
@@ -166,3 +168,9 @@ header.headerbar {
     display: flex;
     align-items: center;
 }	
+.pull-left.logo img {
+	position: relative;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+}
