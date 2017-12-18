@@ -346,5 +346,21 @@ License - nucleoapp.com/license/
     content: "\ea30";
 }
 
+.nc-ungroup::before {
+    content: "\ea31";
+}
+
+.nc-check-small::before {
+    content: "\ea32";
+}
+
+.nc-check-simple::before {
+    content: "\ea33";
+}
+
+.nc-calendar-grid-61::before {
+    content: "\ea34";
+}
+
 
 /* all icon font classes list here */
