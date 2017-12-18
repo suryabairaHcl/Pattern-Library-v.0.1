@@ -68,7 +68,7 @@ document.getElementById("navMenu").innerHTML =
                 '</ul>'+
             '</li>'+
             '<li class="framwork-components"><ul>Messaging'+
-                '<li class=""><a href="#">Page break</a></li>'+
+                '<li class=""><a href="./page-break.html">Page break</a></li>'+
                 '<li class=""><a href="./message-toast.html">Toast messages</a></li>'+
                 '<li class=""><a href="./message-contextual.html">Contextual </a></li>'+
                 '<li class=""><a href="./message-modal.html">Modal</a></li>'+

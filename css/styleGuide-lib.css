@@ -2650,4 +2650,47 @@ span.check-title {
   position: relative;
   top: 1px;
   color: #585E62;
+} 
+
+/*page break*/
+div#page-break {
+    padding: 10px;
+    width: 82%;
+    height: 50px;
+    background: #69A8EF;
+    position: fixed;
+    z-index: 999999;
+    top: 60px;
+    right: 4px;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hide{
+  display: none;
+}
+.page-title p {
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 16px;
+} 
+.page-buttons .btn-secondary {
+     font-family: 'Roboto-Medium', 'Roboto Medium', 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+}   
+.page-buttons .btn-primary {
+    font-family: 'Roboto-Medium', 'Roboto Medium', 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    background: #fff;
+    color: #0071bc;
+    font-size: 14px;
 }  
