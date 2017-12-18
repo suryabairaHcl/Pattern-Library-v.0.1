@@ -1905,7 +1905,7 @@ div#tooltip-container {
         flex-direction: column;
          color:#ffffff !important;
         }
-        .header-ribbon h2, .header-ribbon label, .header-ribbon p{
+        .header-ribbon h2, .header-ribbon label, .header-ribbon p,.partner-ribbon p{
         color:#ffffff !important;
         }
         .header-ribbon h2{
@@ -2689,6 +2689,7 @@ div#page-break {
     font-size: 16px;
 } 
 .page-buttons .btn-secondary {
+     margin-left: 10px;
      font-family: 'Roboto-Medium', 'Roboto Medium', 'Roboto';
     font-weight: 500;
     font-style: normal;
@@ -2746,11 +2747,8 @@ div#page-break {
 }
  .ui-widget{
     top: 24px !important;
-} 
-.adv-search-layout p {
-    display: flex;
-    align-items: center;
-}
+  } 
+  
 span.link {
     font-family: 'Roboto-Bold', 'Roboto Bold', 'Roboto';
     font-weight: 700;
