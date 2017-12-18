@@ -2733,3 +2733,11 @@ div#page-break {
     margin-left: 1216px;
     top: 120px;
 }  
+.container .notification-icons {
+    -webkit-flex: 0.35;
+    -ms-flex: 0.35;
+    flex: 0.35;
+}  
+.container .ui-widget.ui-widget-content{
+  margin-top:123.5px !important;
+}  
