@@ -2744,6 +2744,6 @@ div#page-break {
 .container .ui-autocomplete.search-auto {
     margin-top: 60.5px !important;
 }
-.ui-widget{
-    top: 123.5px !important;
-}
+ .ui-widget{
+    top: 24px !important;
+} 
