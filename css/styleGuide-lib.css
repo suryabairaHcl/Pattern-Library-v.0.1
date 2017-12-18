@@ -2734,10 +2734,16 @@ div#page-break {
     top: 120px;
 }  
 .container .notification-icons {
-    -webkit-flex: 0.35;
-    -ms-flex: 0.35;
-    flex: 0.35;
+    -webkit-flex: 0.45;
+    -ms-flex: 0.45;
+    flex: 0.45;
 }  
 .container .ui-widget.ui-widget-content{
   margin-top:123.5px !important;
 }  
+.container .ui-autocomplete.search-auto {
+    margin-top: 60.5px !important;
+}
+.ui-widget{
+    top: 123.5px !important;
+}

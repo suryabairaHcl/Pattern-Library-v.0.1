@@ -4502,7 +4502,7 @@ i.help-icon {
   .ui-widget {
     font-family: Verdana,Arial,sans-serif;
     font-size: 0.8em;
-    top: 64px !important;
+    top: 64px;
     border-top-width: 3px!important;
 }
   .ui-widget .ui-menu-item {
