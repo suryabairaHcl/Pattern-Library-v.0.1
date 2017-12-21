@@ -9,58 +9,72 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <title>iPortal</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker1" ).datepicker();
-    $( "#datepicker2" ).datepicker();
-  } );
-  </script>
+  <script type="text/javascript">
+                $(document).ready(function() {      
+            $('.datepicker').on('click', function() {
+                $('#ui-datepicker-div').removeClass('date-hide')
+            });
+            });
+	</script>
+  
 </head>
 <body>
-        <header class="headerbar">
+    <header class="headerbar">
         <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
         <h2 class="pull-left"> Pattern Library</h2>
     </header>
     <nav class="styleguide-navigation" id="navMenu">
     </nav>
     <script src="./js/script.js"></script>
-   <div class="container">
+    <div class="container">
         <div class="title">
             <h3> Date Picker</h3>
         </div>
-               <div class="col-md-100 greybox date-picker">
-                <div class="flex-container">  
-                 <div class="time-picker" >  
-                    Start:
-                    <input type="text" id="datepicker1"><i class="nc-icon nc-calendar-grid-61"></i>
-                </div>
-                <div class="time-picker" >
-                    End:
-                    <input type="text" id="datepicker2">
-                </div>
-                 </div>
 
-               </div>  
+         <div class="col-md-100 date-picker">
+            <div class="greybox">
+                <div class="flex-container">  
+                    <div class="datepicker" >  
+                        <label>Start:</label>
+                        <input type="text" id="datepicker1"><i class="nc-icon nc-calendar-grid-61"></i>
+                    </div>
+                    <div class="datepicker" >
+                        <label>End:</label>
+                        <input type="text" id="datepicker2"><i class="nc-icon nc-calendar-grid-61"></i>
+                    </div>
+                </div>
+           </div> 
+         </div> 
+
         <div class="col-md-100 codepan">
 
             <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
                 <div class="flex-container">  
-                 <div class="time-picker" >  
-                    Start:
-                    <input type="text" id="datepicker">
+                    <div class="datepicker" >  
+                        <label>Start:</label>
+                        <input type="text" id="datepicker1"><i class="nc-icon nc-calendar-grid-61"></i>
+                    </div>
+                    <div class="datepicker" >
+                        <label>End:</label>
+                        <input type="text" id="datepicker2"><i class="nc-icon nc-calendar-grid-61"></i>
+                    </div>
                 </div>
-                <div class="time-picker" >
-                    End:
-                    <input type="text" id="datepicker">
-                </div>
-                 </div>
             </xmp></code></pre>
-        </div>        
+        </div> 
+        <div class="clearfix"></div>       
     </div>
  
 </body>
+<script>
+  $( function() { 
+    $( "#datepicker1" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+    $('#ui-datepicker-div').addClass('date-hide'); 
+  } );
+  </script>
 </html>

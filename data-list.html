@@ -32,70 +32,129 @@
             <p>To display large a large number of data items on the page and help user to get some idea about content before going into detail of it.</p>
         </div>
         <div class="col-md-100">
-            <form>
+            
                <div class="greybox data-list">
                                     
-                                      <table class="data-list">  
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <input type="checkbox"/>
-                                                </th>
-                                                <th>Proj Name (ID)</th>
-                                                <th>Line of Business</th>
-                                                <th>Status</th>
-                                                <th>Security Classification</th>
-                                                <th>Client Short Name(ID)</th>
-                                                <th>Country</th>
-                                                <th>IO-P/PL/TL</th>
-                                                <th>Action</th>
-                                            </tr>   
-                                        </thead>
-                                         <tbody>
-                                            
-                                                <tr>
-                                                    <td>
-                                                        <input type="checkbox"/>
-                                                    </td>
-                                                    <td><a href="">A2F Nepal | 602783</a></td>
-                                                    <td>Investment</td>
-                                                    <td>Closed</td>
-                                                    <td>Official Use Only</td>
-                                                    <td>NRB | 693927</td>
-                                                    <td>Nigeria</td>
-                                                    <td>John Doe (2 More) </td>
-                                                    
-                                                    <td>
-                                                    <i class="nc-icon nc-menu-dots"></i>
-                                                    </td>
-                                                    
-                                                </tr> 
-                                           <tr class="spacer"> 
-                                           
-                                            <tr>
-                                                <td>
-                                                    <input type="checkbox"/>
-                                                </td>
-                                                <td><a href="">A2F Nepal | 602783</a></td>
-                                                <td>Advisory</td>
-                                                <td>Active</td>
-                                                <td>Confidential</td>
-                                                <td>NRB | 693927</td>
-                                                <td>Nigeria</td>
-                                                <td>John Doe (2 More) </td>
-                                                
-                                                <td>
-                                                <i class="nc-icon nc-menu-dots"></i>
-                                                </td>
-                                                
-                                            </tr>
-                                          
-                                         </tbody>
-                                      </table>
-                                   
+                  <table class="data-list">  
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="checkbox">
+                                        <input type="checkbox" id="checkbox1" class="checkbox__input" checked>
+                                        <label for="checkbox1" class="checkbox__label"></label>
                                 </div>
-                
-            </form>
+                            </th>
+                            <th>Proj Name (ID)</th>
+                            <th>Line of Business</th>
+                            <th>Status</th>
+                            <th>Security Classification</th>
+                            <th>Client Short Name(ID)</th>
+                            <th>Country</th>
+                            <th>IO-P/PL/TL</th>
+                            <th>Action</th>
+                        </tr>   
+                    </thead>
+                     <tbody>
+                        
+                            <tr>
+                                <td>
+                                   <div class="checkbox">
+                                        <input type="checkbox" id="checkbox2" class="checkbox__input" checked>
+                                        <label for="checkbox2" class="checkbox__label"></label>
+                                   </div>
+                                </td>
+                                <td><a href="">A2F Nepal | 602783</a></td>
+                                <td>Investment</td>
+                                <td>Closed</td>
+                                <td>Official Use Only</td>
+                                <td>NRB | 693927</td>
+                                <td>Nigeria</td>
+                                <td>John Doe (2 More) </td>
+                                
+                                <td>
+                                <i class="nc-icon nc-menu-dots"></i>
+                                </td>
+                                
+                            </tr> 
+                       <tr class="spacer"> 
+                       
+                        <tr>
+                            <td>
+                                <div class="checkbox">
+                                        <input type="checkbox" id="checkbox3" class="checkbox__input" checked>
+                                        <label for="checkbox3" class="checkbox__label"></label>
+                                </div>
+                            </td>
+                            <td><a href="">A2F Nepal | 602783</a></td>
+                            <td>Advisory</td>
+                            <td>Active</td>
+                            <td>Confidential</td>
+                            <td>NRB | 693927</td>
+                            <td>Nigeria</td>
+                            <td>John Doe (2 More) </td>
+                            
+                            <td>
+                            <i class="nc-icon nc-menu-dots"></i>
+                            </td>
+                            
+                        </tr>
+                      
+                     </tbody>
+                  </table>
+
+                  <div class="blankspace"></div>
+
+                  <div class="datagrid-layout">
+                            <i class="nc-icon nc-handshake-2 datagrid"></i>
+                             <div class="adv-row">
+                                 <p>
+                                 <span>SSB Singapore | </span>
+                                 <span>34567</span>
+                                 </p>
+                                 <p style="font-size:14px;"><span class="data-row-title">Short Name | id:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">SSBSp | 34567 </span>
+                                </p> 
+                                <p style="font-size:14px;"><span class="data-row-title">RM:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">John Doe (Inactive)</span>
+                                </p> 
+                             </div> 
+                            <div class="adv-row">
+                                 <p style="font-size:14px;"><span class="data-row-title">Sector:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">V-BC-Wind Power-Renewable Energy Generation </span>
+                                </p> 
+                                <p style="font-size:14px;"><span class="data-row-title">Country of Operation:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">Philippines (East Asia and the Pacific) </span>
+                                </p> 
+                                <p style="font-size:14px;"><span class="data-row-title">Partnership Role:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">Advisory Client </span>
+                                </p>                               
+                             </div>
+                             <div class="adv-row">
+                                 <p style="font-size:14px;"><span class="data-row-title">Tier:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">II </span>
+                                </p> 
+                                <p style="font-size:14px;"><span class="data-row-title">Type:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">Private (Non-Listed) Company</span>
+                                </p> 
+                                <p style="font-size:14px;"><span class="data-row-title">CR &amp; Approved Date:</span>
+                                    <span class="data-row-colon">: </span>
+                                    <span class="data-row-content">CR-5 (20-Oct-2017)</span>
+                                </p>                               
+                             </div>
+                             <div><i class="nc-icon nc-menu-dots"></i></div>                       
+                    </div> 
+
+                    
+                                   
+                </div>
+            
         </div>
         <div class="col-md-100 codepan">
 
@@ -143,6 +202,54 @@
             </tr>
          </tbody>
       </table>
+
+      <div class="datagrid-layout">
+            <i class="nc-icon nc-handshake-2 datagrid"></i>
+             <div class="adv-row">
+                 <p>
+                 <span>SSB Singapore | </span>
+                 <span>34567</span>
+                 </p>
+                 <p style="font-size:14px;"><span class="data-row-title">Short Name | id:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">SSBSp | 34567 </span>
+                </p> 
+                <p style="font-size:14px;"><span class="data-row-title">RM:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">John Doe (Inactive)</span>
+                </p> 
+             </div> 
+            <div class="adv-row">
+                 <p style="font-size:14px;"><span class="data-row-title">Sector:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">V-BC-Wind Power-Renewable Energy Generation </span>
+                </p> 
+                <p style="font-size:14px;"><span class="data-row-title">Country of Operation:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">Philippines (East Asia and the Pacific) </span>
+                </p> 
+                <p style="font-size:14px;"><span class="data-row-title">Partnership Role:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">Advisory Client </span>
+                </p>                               
+             </div>
+             <div class="adv-row">
+                 <p style="font-size:14px;"><span class="data-row-title">Tier:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">II </span>
+                </p> 
+                <p style="font-size:14px;"><span class="data-row-title">Type:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">Private (Non-Listed) Company</span>
+                </p> 
+                <p style="font-size:14px;"><span class="data-row-title">CR &amp; Approved Date:</span>
+                    <span class="data-row-colon">: </span>
+                    <span class="data-row-content">CR-5 (20-Oct-2017)</span>
+                </p>                               
+             </div>
+             <div><i class="nc-icon nc-menu-dots"></i></div>                       
+    </div> 
+    
             </xmp></code></pre>
         </div>
 

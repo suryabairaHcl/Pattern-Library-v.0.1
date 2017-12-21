@@ -42,7 +42,7 @@ $(document).ready(function () {
 		$(".nav-second-level").removeClass("in");
      	$(".metismenu li").removeClass("active");
 		$('.nav-label').hide();
-		$('.arrow').hide();
+		$('.dropicon').hide();
 	})
 	//
 	// Right Sidebars

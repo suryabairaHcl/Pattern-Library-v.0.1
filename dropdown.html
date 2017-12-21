@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./js/helperScript.js"></script>
@@ -26,40 +26,69 @@
     <script src="./js/script.js"></script>
    <div class="container">
         <div class="title">
-            <h3> drop down</h3>
+            <h3>Drop Down</h3>
         </div>
-               <div class="col-md-100 greybox">
-                                      <form>
-                                            <div class="sg-form-group droplist-label">
-                                                <label class="sg-form-label">Droplist Label</label>
-                                                <select class="sg-form-select "> 
-                                                    <option>--Select--</option>
-                                                    <option>option one</option>
-                                                    <option>option two</option>
-                                                    <option>option three</option>
-                                                    <option>option four</option>
-                                                    <option>option five</option>
-                                                </select>
-                                            </div>
-                                      </form>
+               <div class="col-md-100">
+                    <div class="greybox">
+                          <form>
+                                <div class="sg-form-group droplist-label">
+                                    <label class="sg-form-label">Droplist Label</label>
+                                    <select class="sg-form-select "> 
+                                        <option>--Select--</option>
+                                        <option>Option one</option>
+                                        <option>Option two</option>
+                                        <option>Option three</option>
+                                        <option>Option four</option>
+                                        <option>Option five</option>
+                                    </select>
+                                </div>
+                                <div class="sg-form-group droplist-label ">
+                                    <label class="sg-form-label ">Droplist Label</label>
+                                    <div class="drop-icon">
+                                    <i class="nc-icon nc-small-down"></i>
+                                    </div>
+                                    <select class="sg-form-select droplistlink "> 
+                                        
+                                        <option>Select link 
+                                        </option>
+                                        <option>Option one</option>
+                                        <option>Option two</option>
+                                        <option>Option three</option>
+                                        <option>Option four</option>
+                                        <option>Option five</option>
+                                    </select>
+                                </div>
+                          </form>
+                    </div>      
                </div>  
         <div class="col-md-100 codepan">
 
             <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
-                                      <form>
-                                            <div class="sg-form-group droplist-label">
-                                                <label class="sg-form-label">Droplist Label</label>
-                                                <select class="sg-form-select "> 
-                                                    <option>--Select--</option>
-                                                    <option>option one</option>
-                                                    <option>option two</option>
-                                                    <option>option three</option>
-                                                    <option>option four</option>
-                                                    <option>option five</option>
-                                                </select>
-                                            </div>
-                                      </form>
-            </xmp></code></pre>
+              <form>
+                    <div class="sg-form-group droplist-label">
+                        <label class="sg-form-label">Droplist Label</label>
+                        <select class="sg-form-select "> 
+                            <option>--Select--</option>
+                            <option>option one</option>
+                            <option>option two</option>
+                            <option>option three</option>
+                            <option>option four</option>
+                            <option>option five</option>
+                        </select>
+                        <div class="sg-form-group droplist-label droplistlink">
+                                    <label class="sg-form-label">Droplist Label</label>
+                                    <select class="sg-form-select "> 
+                                        <option>--Select--</option>
+                                        <option>option one</option>
+                                        <option>option two</option>
+                                        <option>option three</option>
+                                        <option>option four</option>
+                                        <option>option five</option>
+                                    </select>
+                                </div>
+                    </div>
+              </form>
+                </xmp></code></pre>
         </div>        
     </div>
 </body>

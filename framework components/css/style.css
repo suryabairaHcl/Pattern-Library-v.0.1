@@ -4413,15 +4413,23 @@ input.search:hover::input-placeholder {
   font-weight: 200; }
 
 .ui-autocomplete.search-auto {
+    position: absolute;
     padding: 10px;
-    padding-top: 20px;
+    margin-top: 100px;
     width: 280px !important;
     border: 1px solid #007ebf;
-    z-index: 99999; }
+    z-index: 99999;
+    background: #fff; }
 .ui-menu .ui-menu-item-wrapper:hover{
  border:none;
 }
-
+p.type-head {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.instructions p {
+    line-height: 18px;
+}
 .sidebar-top .dropdown {
   position: relative;
   left: -10px; }

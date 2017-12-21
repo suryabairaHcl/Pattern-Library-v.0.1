@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Style Guide</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/nucleo-outline.css">   -->
+    <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/helperScript.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$(".gs-tabs-navigation > .sg-tab-menu-item").on("click",function(evt){
+				// remove any existing active elements
+				$(this).closest(".sg-tabs-container")
+					   .find(".active-tab-item")
+					   .removeClass("active-tab-item");
+				// add active class to clicked element
+				$(this).addClass("active-tab-item");
+				$(this).closest(".sg-tabs-container")
+					   .find(".sg-tabs-body .sg-tab-content[data-item='"+($(this).data("item"))+"']")
+					   .addClass("active-tab-item");
+			});
+		});
+	</script>
+</head>
+
+<body>
+     <header class="headerbar">
+        <div class="pull-left logo"><img src="img/iportal-logo.png" alt="iPortal" width="105px" /></div>
+        <h2 class="pull-left"> Pattern Library</h2>
+    </header>
+    <nav class="styleguide-navigation" id="navMenu">
+    </nav>
+    <script src="./js/script.js"></script>
+    <div class="container">
+        <div class="title">
+            <h3>Indtroduction</h3>
+        </div>
+
+                    <div class="col-md-100"> 
+                        <div class="home">
+                          <div class="instructions">
+                              <p>This HTML code library is a responsive UI framework for iPortal 2, and documentation for installing the code so that a UI development environment can be maintained. </p>
+                          </div>
+                           <div class="instructions">
+                               <div class="css-js">CSS and JS:</div>
+                              <p>To have availability to the framework all pages must have the framework CSS and JS files included in the HTML pages. This can be achieved by copy-paste the following code into the HTML pages: </p>
+                          </div>
+                            <div class="instructions">
+                              <p>Copy-paste into the "<head>" before all other stylesheets: </p>
+                              <div class="col-md-100 codepan">
+                                <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
+                                <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+                                <link rel="stylesheet" type="text/css" href="./css/styleGuide-lib.css">
+                                <link rel="stylesheet" type="text/css" href="./css/reset.css">
+                                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+                                <link rel="stylesheet" type="text/css" href="./css/nc-icon.css">
+                                </xmp></code></pre>
+                                </div>  
+                             </div>  
+                          </div>
+                            <div class="instructions">
+                             <p>Copy-paste into the HTML pages, near the </body> tag. </p>
+                            <div class="col-md-100 codepan">
+
+                                <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                                <!-- jQuery UI -->
+                                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+                                <!-- Latest compiled and minified Bootstrap JS -->
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+                                <!-- JS Plugins -->
+                                <!-- Bootstrap Tour -->
+                                <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+                                <!-- Kendo js plugins-->
+                                <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+                                <!-- other plugins -->
+                                <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                                <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+                                <script src="js/plugins/masonary/masonry.pkgd.min.js"></script>
+                                <!-- Bootstrap Tour -->
+                                <script src="js/plugins/bootstrapTour/bootstrap-tour.min.js"></script>
+                                <!-- custom jQuery script -->
+                                <script src="js/custom.js"></script>
+                                </xmp></code></pre>
+                                </div>  
+                             </div>
+                            <div class="instructions">
+                            <p>Each HTML UI component can be found on the specific page that corresponds to the UI component.  When that code is used in conjunction with the specified CSS and JS code, the component will render correctly. </p>
+                            </div>
+                            <div class="instructions Pattern-lib-files">
+                              <p>The necessary files for the framework to be implemented on HTML pages are: </p>
+                              <a href="https://github.com/suryabairaHcl/Pattern-Library-v.0.1.git">Downlaod files here </a>
+                              <p>Pattern-Library-v.0.0.3</p>
+                              <div>
+                                  <p>Framework-components:</p>
+                                  <a href="./framework components/help-support.html">click to veiw the framework components</a>
+                              </div>
+                              
+                              <p>images</p>
+
+                          </div>
+                        </div>       
+                                
+                    </div>
+</body>
+
+</html>

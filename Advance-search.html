@@ -14,7 +14,32 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./js/helperScript.js"></script>
-    
+    <script type="text/javascript">
+                $(document).ready(function() {
+            $('.filter-advanced').on('click', function() {
+                $('#advance-search').slideDown();
+            });
+            });
+    </script>
+    <script type="text/javascript">
+                $(document).ready(function() {
+            $('filter-cancel').on('click', function() {
+                $('#advance-search').hide();
+            });
+            });
+             $(document).ready(function() {
+            $('.filter-close').on('click', function() {
+                $('#advance-search').hide();
+            });
+            });
+	</script>
+    <script type="text/javascript">
+                $(document).ready(function() {      
+            $('.datepicker').on('click', function() {
+                $('#ui-datepicker-div').removeClass('date-hide')
+            });
+            });
+	</script>
 </head>
 
 <body> 
@@ -28,43 +53,224 @@
 
     <div class="container">
         <div class="title">
-            <h3>Filters</h3>
+            <h3>Advanced Search</h3>
         </div>
-        <div class="adv-search">
-
-        </div>
-        <div class="col-md-50">
-            <form>
+        <div class="col-md-100">
+            <form class="advfilter-container">
                 <ul class="accordion"> 
                 <li class="filters">
                     <div class="filters-text">Filters</div> 
-                    <a class="pull-right clear-filter"><i class="nc-icon nc-small-remove-2"></i>Clear All</a> 
+                     <div id="advance-search" >
+                         <div class="flex-container">
+                             <div class="flex-container5 adv-input">
+                                 <div class="adv-filter-title">Advanced Filtering</div>
+                                 <div class="flex-container1 adv-input">
+                                  <div class="sg-form-group droplist-label">
+                                    <select class="sg-form-select "> 
+                                        <option>--Select--</option>
+                                        <option>Option one</option>
+                                        <option>Option two</option>
+                                        <option>Option three</option>
+                                        <option>Option four</option>
+                                        <option>Option five</option>
+                                    </select>
+                                </div>  
+                                <div class="sg-form-group droplist-label">
+                                    <select class="sg-form-select-search"> 
+                                    </select>
+                                </div> 
+                                 </div>
+                                <div class="filters1">
+                                    <div class="filter-applied">FILTER APPLIED
+                                        <div class="tooltip"> <p>2</p>
+                                    </div> 
+                                    <a class="pull-right clear-filter"><i class="nc-icon nc-small-remove-2"></i>Clear All</a>     
+                                </div>    
+                             </div>
+                             <div class="relation-filter">
+                                 <div class="filter-label">RELATIONSHIP:</div>
+                                 <div class="filter-select">My Partners  
+                                     <a class="pull-right select-cross"><i class="nc-icon nc-small-remove-2"></i></a>
+                                 </div>
+                                 <div class="filter-select">My Projects
+                                     <a class="pull-right select-cross"><i class="nc-icon nc-small-remove-2"></i></a>
+                                 </div>
+                             </div>
+                             <div class="country-filter">
+                                 <div class="filter-label">COUNTRY:</div>
+                                 <div class="filter-select">India
+                                     <a class="pull-right select-cross"><i class="nc-icon nc-small-remove-2"></i></a>
+                                 </div>
+                                 <div class="filter-select">My Projects
+                                     <a class="pull-right select-cross"><i class="nc-icon nc-small-remove-2"></i></a>
+                                 </div>
+                                 <div class="filter-select">Filter Name
+                                     <a class="pull-right select-cross"><i class="nc-icon nc-small-remove-2"></i></a>
+                                     </div>    
+                             </div>    
+                         </div>
+                             <div class="flex-container2">
+                                 <div class="adv-filter-title">Refine Search By</div>
+                                <div class="flex-container3">  
+                                    <div class="datepicker" >  
+                                        <label class="start-date">Creation Date:</label>
+                                        <input type="text" id="datepicker1" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                    <div class="datepicker" >
+                                        <label class="end-date">To</label>
+                                        <input type="text" id="datepicker2" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-container3">  
+                                    <div class="datepicker" >  
+                                        <label class="start-date">Last Updated On:</label>
+                                        <input type="text" id="datepicker3" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                    <div class="datepicker" >
+                                        <label class="end-date">To</label>
+                                        <input type="text" id="datepicker4" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-container3">  
+                                    <div class="datepicker" >  
+                                        <label class="start-date">Lorem Ipsum:</label>
+                                        <input type="text" id="datepicker5" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                    <div class="datepicker" >
+                                        <label class="end-date">To</label>
+                                        <input type="text" id="datepicker6" placeholder="mm/dd/yy"><i class="nc-icon nc-calendar-grid-61"></i>
+                                    </div>
+                                </div>
+                             </div>
+                     </div>
+                    <div class="footer-action filter-butns">
+                                    <button class="btn btn-primary pull-right">Update</button>
+                                    <button id="filter-cancel" class="btn btn-secondary pull-right">Cancel</button>
+                    </div>        
+                     <a class="filter-close"><i class="nc-icon nc-small-remove-2"></i></a>        
                 </li>
-                <li class="list-0">
+                     <li class="list-0">
                 <div class="toggle" href="javascript:void(0);">
-                    <div class="filter-advanced">
+                    <div class="filter-advanced filterlist-icons">
                         <a href="" class="right-tool">ADVANCED</a> 
                         <i class="nc-icon nc-small-down"></i>
                     </div>
-                    <div class="filter-save">
+                    <div class="filter-save filterlist-icons">
                         <a href="" class="right-tool">SAVE</a> 
                         <span>|</span>
-                        <a href="" style="color: #585E62;">SAVED(2)</a> 
+                        <a href="">SAVED(2)</a> 
                         <i class="nc-icon nc-small-down"></i>
                     </div>
                 </div>                                                     
             </li>
             <li class="list-1">  
                 <a class="toggle" href="javascript:void(0);">
-                    <div>
+                    <div class="filterlist-icons">
                         <i class="nc-icon nc-small-down"></i>
                         <span>CATEGORIES</span>
                     </div>
                 </a>
-            </li>               
+                <ul class="inner">
+                    <div class="catogories-all">
+                        <section title=".squaredOne"> 
+                            <div class="squaredOne">
+                                <input type="checkbox" value="None" id="squaredOne1" name="check" checked />
+                                <label for="squaredOne"></label>
+                            </div>
+                        </section>    
+                        <span class="check-title">All</span>
+                    </div>
+                       <li >
+                            <div class="doc-list"> 
+                                <div class="checkbox">
+                                        <input type="checkbox" id="checkbox1" class="checkbox__input" checked>
+                                        <label for="checkbox1" class="checkbox__label"></label>
+                                </div>
+                                <span class="check-title">PROJECTS (9)</span>
+                            </div>                
+                        </li>
+                    <li >
+                        <div class="doc-list">    
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="checkbox2" class="checkbox__input" checked>
+                                        <label for="checkbox2" class="checkbox__label"></label>
+                                    </div>
+                                <span class="check-title">PARTNERS (11)</span>
+                            </div> 
+                    <li>
+                        <div class="doc-list">    
+                            <div class="checkbox">
+                                        <input type="checkbox" id="checkbox3" class="checkbox__input" checked>
+                                        <label for="checkbox3" class="checkbox__label"></label>
+                            </div>
+                            <span class="check-title">DOCUMENTS (12)</span>                
+                        </div>                    
+                    </li> 
+                    <li>
+                        <div class="doc-list">    
+                            <div class="checkbox">
+                                        <input type="checkbox" id="checkbox4" class="checkbox__input" checked>
+                                        <label for="checkbox4" class="checkbox__label"></label>
+                            </div>
+                            <span class="check-title">DOCUMENTS (12)</span>                
+                        </div>                    
+                    </li>
+                    <li>
+                        <div class="doc-list">    
+                            <div class="checkbox">
+                                        <input type="checkbox" id="checkbox5" class="checkbox__input" checked>
+                                        <label for="checkbox5" class="checkbox__label"></label>
+                            </div>
+                            <span class="check-title">DOCUMENTS (12)</span>                
+                        </div>                    
+                    </li>  
+                    <div class="drop-more">
+                        <span>5 more</span>
+                        <i class="nc-icon nc-small-down"></i>
+                    </div>    
+
+                </ul>
+            </li>   
+            <li class="list-1">  
+                <a class="toggle" href="javascript:void(0);">
+                    <div class="filterlist-icons">
+                        <i class="nc-icon nc-small-down"></i>
+                        <span>PARTNER SHORT NAME(ID)</span>
+                    </div>
+                </a>
+                <ul class="inner">
+                    <li >
+                        <div class="doc-list">    
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="checkbox6" class="checkbox__input" checked>
+                                        <label for="checkbox6" class="checkbox__label"></label>
+                                   </div>
+                                <span class="check-title">All Documents</span>
+                            </div> 
+                    <li>
+                        <div class="doc-list">    
+                            <div class="checkbox">
+                                        <input type="checkbox" id="checkbox7" class="checkbox__input" checked>
+                                        <label for="checkbox7" class="checkbox__label"></label>
+                            </div>
+                            <span class="check-title">My Partners</span>                
+                        </div>                    
+                    </li> 
+                    <li>
+                        <div class="doc-list">    
+                            <div class="checkbox">
+                                        <input type="checkbox" id="checkbox8" class="checkbox__input" checked>
+                                        <label for="checkbox8" class="checkbox__label"></label>
+                            </div>
+                            <span class="check-title">My Projects</span>                
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            
             <li class="list-1">
                 <a class="toggle" href="javascript:void(0);">
-                    <div>
+                    <div class="filterlist-icons">
                         <i class="nc-icon nc-small-down"></i>
                         <span>PARTNER LEGAL NAME</span>
                     </div>
@@ -74,7 +280,7 @@
             
             <li class="list-1">
                 <a class="toggle" href="javascript:void(0);">
-                    <div>
+                    <div class="filterlist-icons">
                         <i class="nc-icon nc-small-down"></i>
                         <span>RELATIONSHIP MANAGER</span>
                     </div>    
@@ -82,11 +288,51 @@
                 </a>
             </li>
 
+            <li class="list-1">
+                    <a class="toggle" href="javascript:void(0);">
+                    <div class="filterlist-icons">
+                        <i class="nc-icon nc-small-down"></i>
+                        <span>CLIENT COVERAGE AND TYPE</span>
+                    </div>    
+                    
+                </a>
+            </li>
+            <li class="list-1">
+                    <a class="toggle" href="javascript:void(0);">
+                    <div class="filterlist-icons">
+                        <i class="nc-icon nc-small-down"></i>
+                        <span>CERTIFICATION STATUS</span>
+                    </div>
+                    <div class="tooltip pull-right"> <p>2</p>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="list-1">
+                    <a class="toggle" href="javascript:void(0);">
+                    <div class="filterlist-icons">
+                        <i class="nc-icon nc-small-down"></i>
+                        <span>IFC PRIMARY PARTNER SECTOR</span>
+                    </div>
+                    <div class="tooltip pull-right"> <p>2</p>
+                    <!-- <div class="tooltiptext"> <p>Tooltip iguggigigguggg text</p></div> -->
+                    </div>
+                </a>
+            </li>
+            <li class="list-1">
+                    <a class="toggle" href="javascript:void(0);">
+                    <div class="filterlist-icons">
+                        <i class="nc-icon nc-small-down"></i>
+                        <span>REGION/COUNTRY OF OPERATION</span>
+                    </div>    
+                    
+                </a>
+            </li>
 
-            </ul>
+            </ul>           
             </form>
         </div>
-        <div class="col-md-50 codepan">
+        <div class="col-md-100 codepan">
 
             <pre class="prettyprint language-html"><code class="token tag"><xmp data-id="id-set-1">
     <form>
@@ -180,13 +426,17 @@
        
 
     </div>
-    
-
-
-
-
-
-
 
 </body>
+<script>
+  $( function() { 
+    $( "#datepicker1" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+    $( "#datepicker3" ).datepicker();
+    $( "#datepicker4" ).datepicker();
+    $( "#datepicker5" ).datepicker();
+    $( "#datepicker6" ).datepicker();
+    $('#ui-datepicker-div').addClass('date-hide'); 
+  } );
+  </script>
 </html>

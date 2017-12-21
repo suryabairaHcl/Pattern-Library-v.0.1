@@ -75,7 +75,7 @@ h3, h4, h5 {
   background: #fff;
   border: 1px solid #e6e6e6;
   width: 100%;
-  height: 60px;
+  height: 65px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -155,8 +155,7 @@ h3, h4, h5 {
   font-family: "Roboto"; }
 
 /* noification icons */
-.notification-icons {
-  height: 65px; }
+
 
 .navbar-top-links {
   display: -webkit-box;
@@ -3291,9 +3290,11 @@ div#notifications-sidebar {
 div#tasks-sidebar {
   border: 1px solid #e4e4e4; }
 
+
 .notification-icons {
   border: 0px;
-  border-left: 1px solid #999999; }
+  border-left: 1px solid #E5EBEF; 
+  height: 65px; }
 
 .accnt-view {
   flex: 0.1; }

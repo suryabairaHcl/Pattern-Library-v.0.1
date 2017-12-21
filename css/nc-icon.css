@@ -362,5 +362,9 @@ License - nucleoapp.com/license/
     content: "\ea34";
 }
 
+.nc-l-check::before {
+    content: "\ea35";
+}
+
 
 /* all icon font classes list here */
